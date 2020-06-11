@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 12px / 22px Arial, sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
