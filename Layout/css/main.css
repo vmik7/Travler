@@ -123,6 +123,7 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.16);
 }
 
 .nav__item {
@@ -133,18 +134,8 @@ body {
     padding-top: 16px;
     height: 100px;
     background: linear-gradient(0deg, rgb(229,229,229) 0%, rgb(255,255,255) 100%);
-    /* border-right: 1px solid #d4d4d4; */
     position: relative;
-}
-
-.nav__item::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 5px;
-    background: #8038c2;
-    position: absolute;
-    bottom: -5px;
+    border-bottom: 5px solid #8038c2;
 }
 
 .nav__item::after {
@@ -162,9 +153,36 @@ body {
     display: none;
 }
 
-.nav__icon {
+.nav__icon swg {
     height: 26px;
-    fill: #707070;
+    /* fill: #707070; */
+}
+
+.nav__item_big {
+    width: 170px;
+    flex-shrink: 0;
+}
+
+.nav__item_active {
+    height: 111px;
+    margin-top: -11px;
+    margin-left: -1px;
+    background: #fff;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,10%);
+    z-index: 99;
+    border-bottom-width: 13px;
+}
+
+.nav__item_active::after {
+    display: none;
+}
+
+.nav__item_active .nav__text {
+    color: #701dbb;
+}
+
+.nav__item_active .nav__icon #Filter_1 feFlood{
+    fill: #000;
 }
 
 .nav__text {
@@ -173,7 +191,4 @@ body {
     margin-top: 2px;
     letter-spacing: 0em;
 }
-
-.nav__item_active {
-    color: #701dbb;
-}
+  
