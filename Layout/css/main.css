@@ -191,17 +191,131 @@ body {
 
 .front-section {
     background: url(../img/header-bg.png) center top / cover;
+    border-bottom: 1px solid #5a5a5a;
 }
 
 .front-section__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 499px;
 }
-
 
 .front-section__icon {
     height: 128px;
     margin-bottom: 8px;
 }
+
+.anywhere {
+    background: #2d2d2d;
+    border-bottom: 2px solid #1e1e1e;;
+    height: 716px;
+    color: #fff;
+}
+
+.anywhere__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anywhere__head {
+    margin-top: 51px;
+}
+
+.section__head {
+    font: 300 35px / 27px Nexa, sans-serif;
+}
+
+.anywhere__sub-head {
+    color: #a161db;
+}
+
+.section__sub-head {
+    font: 700 13px / 23px Nexa, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.anywhere__map {
+    margin-top: 15px;
+}
+
+.anywhere__img {
+    width: 920px;
+}
+
+.anywhere__perfomance-icons {
+    margin-top: -22px;
+    width: 653px;
+}
+
+.perfomance-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perfomance-icons__icon {
+    width: 11%;
+    flex-shrink: 0;
+}
+
+.perfomance-icons__separator {
+    background: #fff;
+    border-radius: 1px;
+    width: 20%;
+    height: 3px;
+    margin: 0 44px;
+}
+
+.anywhere__block-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.anywhere__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 41px;
+    width: 250px;
+}
+
+.anywhere__block:last-child {
+    margin-right: 0;
+}
+
+.anywhere__block-title {
+    font: 300 23px / 22px Nexa, sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.anywhere__block-text {
+    font: 12px / 21px Arial, sans-serif;
+    text-align: justify;
+}
+
+.i-mac {
+    background: url(../img/i-mac.png) center top / cover;
+    height: 486px;
+    color: #fff;
+}
+
+.i-mac__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 196px;
+}
+
+.i-mac__perfomance-icons {
+    width: 830px;
+}
+
+.i-mac__head {
+    margin-top: 52px;
+    margin-bottom: 19px;
+}
+
