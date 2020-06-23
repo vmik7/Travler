@@ -159,7 +159,6 @@ body {
     right: 0;
     top: 0;
 }
-
 .nav__item:last-child::after {
     display: none;
 }
@@ -187,6 +186,14 @@ body {
 
 .nav__item_active::after {
     display: none;
+}
+
+.nav__item:hover {
+    cursor: pointer;
+    background: #fff;
+    /* margin-top: -11px; */
+    /* height: 116px; */
+    /* border-width: 12px; */
 }
 
 .nav__item_active .nav__text {
@@ -418,6 +425,7 @@ body {
     padding: 55px 55px 83px 48px;
     position: relative;
     margin-bottom: 15px;
+    transition: all 0.2s ease;
 } 
 
 .info-card__head {
@@ -455,6 +463,7 @@ body {
     width: 29px;
     top: 0;
     left: 0;
+    cursor: pointer;
 }
 
 .info-card_big {
