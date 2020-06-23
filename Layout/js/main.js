@@ -6,6 +6,9 @@ var infoCardPluses = document.getElementsByClassName('info-card__plus');
 
 var navColors = [ '#6017a3', '#701dbb', '#8038c2', '#a34ff0' ];
 
+
+// Nav border-color set ------------------------------------------
+
 var currentColor = 0,
     colorDelta = 1;
 
@@ -18,6 +21,11 @@ for (var i = 0; i < navItems.length; i++) {
     }
 }
 
+// ----------------------------------------------------------------
+
+
+// nav items slider -----------------------------------------------
+
 for (var item of navItems) {
     item.addEventListener('click', function() {
         for (var cur of navItems) {
@@ -26,6 +34,11 @@ for (var item of navItems) {
         this.classList.add('nav__item_active');
     });
 }
+
+// ----------------------------------------------------------------
+
+
+// info-cards slider ----------------------------------------------
 
 var bigCardIndex = 2;
 
@@ -84,3 +97,5 @@ for (var plus of infoCardPluses) {
         }
     });
 }
+
+// ----------------------------------------------------------------
